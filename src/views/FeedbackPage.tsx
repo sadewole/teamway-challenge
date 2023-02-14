@@ -1,5 +1,7 @@
+import Layout from '../Layout'
+
 const FeedbackPage = () => {
-  return <div>FeedbackPage</div>
+  return <Layout loggedIn>FeedbackPage</Layout>
 }
 
 export default FeedbackPage

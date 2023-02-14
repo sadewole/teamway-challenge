@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { Title } from '../components/Title'
+import Header from './Header'
 
 const Layout = ({
   children,
@@ -11,13 +11,7 @@ const Layout = ({
         loggedIn ? 'grid-rows-[60px_1fr_50px]' : 'grid-rows-[1fr_50px]'
       }`}
     >
-      {loggedIn && (
-        <header className="bg-white">
-          <div className="max-w-[900px] mx-auto h-full flex items-center justify-between">
-            <Title />
-          </div>
-        </header>
-      )}
+      {loggedIn && <Header />}
       <div className="px-8 py-12">
         <div className="max-w-[900px] mx-auto h-full">{children}</div>
       </div>
