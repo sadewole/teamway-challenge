@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Julee';
+  src: url('../public/font/Julee-Regular.ttf');
+}
