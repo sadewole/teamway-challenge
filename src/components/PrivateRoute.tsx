@@ -1,20 +1,20 @@
-import { ReactElement, useContext } from 'react';
-import { Navigate } from 'react-router-dom';
-import { AccountContext } from '../context/AccountProvider';
+import { ReactElement, useContext } from 'react'
+import { Navigate } from 'react-router-dom'
+import { AccountContext } from '../context/AccountProvider'
 
 const PrivateRoute = ({
   component: Component,
 }: {
-  component: ReactElement;
+  component: ReactElement
 }) => {
-  const currentUser = useContext(AccountContext);
-  let isLoggedIn = !!currentUser;
+  const currentUser = useContext(AccountContext)
+  let isLoggedIn = !!currentUser
 
   if (!isLoggedIn) {
-    return <Navigate to='/' replace />;
+    return <Navigate to="/" replace />
   }
 
-  return Component;
-};
+  return Component
+}
 
-export default PrivateRoute;
+export default PrivateRoute

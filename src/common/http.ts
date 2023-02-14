@@ -1,27 +1,27 @@
-type HttpT = 'GET' | 'POST' | 'PUT' | 'DELETE';
+type HttpT = 'GET' | 'POST' | 'PUT' | 'DELETE'
 
 type ConfigT = {
-  method: HttpT;
-  body?: string;
-};
+  method: HttpT
+  body?: string
+}
 
 async function doFetch(
   method: HttpT,
   url: string,
   body?: {
-    [key: string]: any;
-  }
+    [key: string]: any
+  },
 ) {
-  const config: ConfigT = { method };
+  const config: ConfigT = { method }
 
   if (body) {
-    config.body = JSON.stringify(body);
+    config.body = JSON.stringify(body)
   }
 
-  const res = await fetch(url, config);
+  const res = await fetch(url, config)
   // delete has no content
   if (res.status !== 204) {
-    return res.json();
+    return res.json()
   }
 }
 
@@ -30,6 +30,6 @@ const http = {
   post: doFetch.bind(null, 'POST'),
   put: doFetch.bind(null, 'PUT'),
   del: doFetch.bind(null, 'DELETE'),
-};
+}
 
-export default http;
+export default http
