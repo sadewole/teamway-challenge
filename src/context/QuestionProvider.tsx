@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { shuffleOptions } from '../utils/shuffleOptions'
-import { AnswerT, QuestionT } from './questionTypes'
+import { QuestionT, AnswerT } from './types'
 
 type SetQuestionsT = {
   action: 'set'

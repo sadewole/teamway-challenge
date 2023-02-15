@@ -3,7 +3,7 @@ import {
   DispatchQuestionContext,
   QuestionContext,
 } from '../../../context/QuestionProvider'
-import { QuestionOptionT } from '../../../context/questionTypes'
+import { QuestionOptionT } from '../../../context/types'
 import { Button } from '../../Button'
 import OptionItem from './OptionItem'
 

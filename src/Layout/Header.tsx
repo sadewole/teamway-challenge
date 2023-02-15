@@ -4,14 +4,17 @@ import {
   AccountContext,
   DispatchAccountContext,
 } from '../context/AccountProvider'
+import { DispatchQuestionContext } from '../context/QuestionProvider'
 import { Title } from '../components/Title'
 
 const Header = () => {
   const currentUser = useContext(AccountContext)
   const logoutUser = useContext(DispatchAccountContext)
+  const questionDispatch = useContext(DispatchQuestionContext)
 
   const handleLogout = () => {
     logoutUser({ action: 'logout' })
+    questionDispatch({ action: 'restart' })
   }
 
   return (

@@ -1,4 +1,4 @@
-import { QuestionOptionT } from '../context/questionTypes'
+import { QuestionOptionT } from '../context/types'
 
 export const shuffleOptions = (arr: QuestionOptionT[]) =>
   arr

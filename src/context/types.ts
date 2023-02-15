@@ -1,12 +1,21 @@
 export type UsernameT = string
 
-export type OptionT = { value: number; label: string }
+export type QuestionOptionT = {
+  label: string
+  value: string
+}
 
-export type FeedbackT = Record<
+export type QuestionT = {
+  id: string
+  label: string
+  options: QuestionOptionT[]
+}
+
+export type AnswerT = Record<
   string,
   {
     id: string
-    ques: string
-    ans: string | OptionT
+    question: string
+    answer: QuestionOptionT
   }
 >

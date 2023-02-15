@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { QuestionOptionT } from '../../../context/questionTypes'
+import { QuestionOptionT } from '../../../context/types'
 
 type Props = {
   value: string
