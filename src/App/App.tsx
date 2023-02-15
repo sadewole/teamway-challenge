@@ -15,7 +15,7 @@ const App = () => {
   let isLoggedIn = !!currentUser
 
   useEffect(() => {
-    http.get('questions').then(([questions]) => {
+    http.get('questions').then((questions) => {
       questionDispatch({
         action: 'set',
         payload: questions,

@@ -17,7 +17,7 @@ const FeedbackPage = () => {
         {screen === 'question' && (
           <QuestionScreen onFinish={handleToggleScreen} />
         )}
-        {screen === 'finish' && <FinishScreen />}
+        {screen === 'finish' && <FinishScreen onRestart={handleToggleScreen} />}
       </div>
     </Layout>
   )

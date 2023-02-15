@@ -1,98 +1,112 @@
 [
   {
     "id": "q1",
-    "type": "scale",
-    "required": true,
-    "label": "How much do you trust this person to deliver high quality work?"
+    "label": "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
+    "options": [
+      {
+        "value": "1",
+        "label": "Don’t dare to interrupt them"
+      },
+      {
+        "value": "2",
+        "label": "Think it’s more important to give them some of your time; work can wait."
+      },
+      {
+        "value": "3",
+        "label": "Listen, but with only with half an ear"
+      },
+      {
+        "value": "4",
+        "label": "Interrupt and explain that you are really busy at the moment"
+      }
+    ]
   },
   {
     "id": "q2",
-    "type": "multipleChoice",
-    "required": true,
-    "label": "Is this person up to date with the latest accounting regulations?",
+    "label": "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
     "options": [
       {
-        "value": 1,
-        "label": "Not fully. You should work on trying to stay more up to date with regulations"
+        "value": "1",
+        "label": "Look at your watch every two minutes"
       },
       {
-        "value": 2,
-        "label": "Yes, you are reasonably up to date with new regulations."
+        "value": "2",
+        "label": "Bubble with inner anger, but keep quiet"
       },
       {
-        "value": 3,
-        "label": "Yes, you are the one I look up to when I need information about new regulations"
+        "value": "3",
+        "label": "Explain to other equally impatient people in the room that the doctor is always running late"
+      },
+      {
+        "value": "4",
+        "label": "Complain in a loud voice, while tapping your foot impatiently"
       }
     ]
   },
   {
     "id": "q3",
-    "type": "scale",
-    "required": true,
-    "label": "How well does this person understand the technical domain of our product?"
+    "label": "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
+    "options": [
+      {
+        "value": "1",
+        "label": "Don’t dare contradict them"
+      },
+      {
+        "value": "2",
+        "label": "Think that they are obviously right"
+      },
+      {
+        "value": "3",
+        "label": "Defend your own point of view, tooth and nail"
+      },
+      {
+        "value": "4",
+        "label": "Continuously interrupt your colleague"
+      }
+    ]
   },
   {
     "id": "q4",
-    "type": "text",
-    "required": false,
-    "label": "Have there been any situations where this person could have managed their emotions better? What happened?"
+    "label": "You are taking part in a guided tour of a museum. You:",
+    "options": [
+      {
+        "value": "1",
+        "label": "Are a bit too far towards the back so don’t really hear what the guide is saying"
+      },
+      {
+        "value": "2",
+        "label": "Follow the group without question"
+      },
+      {
+        "value": "3",
+        "label": "Make sure that everyone is able to hear properly"
+      },
+      {
+        "value": "4",
+        "label": "Are right up the front, adding your own comments in a loud voice"
+      }
+    ]
   },
   {
     "id": "q5",
-    "type": "multipleChoice",
-    "required": true,
-    "label": "Does this person care about our users and treats customer support as a high priority?",
+    "label": "During dinner parties at your home, you have a hard time with people who:",
     "options": [
       {
-        "value": 1,
-        "label": "Not always - you should work on this aspect"
+        "value": "1",
+        "label": "Ask you to tell a story in front of everyone else"
       },
       {
-        "value": 2,
-        "label": "Yes, you go out of our way to help our users and improve their experience"
+        "value": "2",
+        "label": "Talk privately between themselves"
       },
       {
-        "value": 3,
-        "label": "Yes, your understanding of our users and the empathy you demonstrate is second to none"
+        "value": "3",
+        "label": "Hang around you all evening"
+      },
+      {
+        "value": "4",
+        "label": "Always drag the conversation back to themselves"
       }
     ]
-  },
-  {
-    "id": "q6",
-    "type": "text",
-    "required": true,
-    "label": "What would you like this person to work on the most during the next month, to enable their continued growth?"
-  },
-  {
-    "id": "q7",
-    "type": "multipleChoice",
-    "required": true,
-    "label": "How transparent and clear are this person's plans and work tasks?",
-    "options": [
-      {
-        "value": 1,
-        "label": "I frequently not know what you are working on, please work with me to raise visibility"
-      },
-      {
-        "value": 2,
-        "label": "I almost always know what you are working on, but not always the details or next steps, only the outcomes you are after."
-      },
-      {
-        "value": 3,
-        "label": "Your plans are clear and readily available to those around you, and I always know what the next step is."
-      }
-    ]
-  },
-  {
-    "id": "q8",
-    "type": "scale",
-    "required": true,
-    "label": "How well does this person understand our business goals and roadmap?"
-  },
-  {
-    "id": "q9",
-    "type": "text",
-    "required": false,
-    "label": "Is there anything else you'd like to share with this person?"
   }
 ]
