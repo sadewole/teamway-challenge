@@ -5,19 +5,23 @@
     "options": [
       {
         "value": "1",
-        "label": "Don’t dare to interrupt them"
+        "label": "Don’t dare to interrupt them",
+        "trait": "Introvert"
       },
       {
         "value": "2",
-        "label": "Think it’s more important to give them some of your time; work can wait."
+        "label": "Think it’s more important to give them some of your time; work can wait.",
+        "trait": "Extrovert"
       },
       {
         "value": "3",
-        "label": "Listen, but with only with half an ear"
+        "label": "Listen, but with only with half an ear",
+        "trait": "Introvert"
       },
       {
         "value": "4",
-        "label": "Interrupt and explain that you are really busy at the moment"
+        "label": "Interrupt and explain that you are really busy at the moment",
+        "trait": "Extrovert"
       }
     ]
   },
@@ -27,19 +31,23 @@
     "options": [
       {
         "value": "1",
-        "label": "Look at your watch every two minutes"
+        "label": "Look at your watch every two minutes",
+        "trait": "Introvert"
       },
       {
         "value": "2",
-        "label": "Bubble with inner anger, but keep quiet"
+        "label": "Bubble with inner anger, but keep quiet",
+        "trait": "Introvert"
       },
       {
         "value": "3",
-        "label": "Explain to other equally impatient people in the room that the doctor is always running late"
+        "label": "Explain to other equally impatient people in the room that the doctor is always running late",
+        "trait": "Extrovert"
       },
       {
         "value": "4",
-        "label": "Complain in a loud voice, while tapping your foot impatiently"
+        "label": "Complain in a loud voice, while tapping your foot impatiently",
+        "trait": "Extrovert"
       }
     ]
   },
@@ -49,19 +57,23 @@
     "options": [
       {
         "value": "1",
-        "label": "Don’t dare contradict them"
+        "label": "Don’t dare contradict them",
+        "trait": "Introvert"
       },
       {
         "value": "2",
-        "label": "Think that they are obviously right"
+        "label": "Think that they are obviously right",
+        "trait": "Introvert"
       },
       {
         "value": "3",
-        "label": "Defend your own point of view, tooth and nail"
+        "label": "Defend your own point of view, tooth and nail",
+        "trait": "Extrovert"
       },
       {
         "value": "4",
-        "label": "Continuously interrupt your colleague"
+        "label": "Continuously interrupt your colleague",
+        "trait": "Extrovert"
       }
     ]
   },
@@ -71,19 +83,23 @@
     "options": [
       {
         "value": "1",
-        "label": "Are a bit too far towards the back so don’t really hear what the guide is saying"
+        "label": "Are a bit too far towards the back so don’t really hear what the guide is saying",
+        "trait": "Introvert"
       },
       {
         "value": "2",
-        "label": "Follow the group without question"
+        "label": "Follow the group without question",
+        "trait": "Introvert"
       },
       {
         "value": "3",
-        "label": "Make sure that everyone is able to hear properly"
+        "label": "Make sure that everyone is able to hear properly",
+        "trait": "Extrovert"
       },
       {
         "value": "4",
-        "label": "Are right up the front, adding your own comments in a loud voice"
+        "label": "Are right up the front, adding your own comments in a loud voice",
+        "trait": "Extrovert"
       }
     ]
   },
@@ -93,19 +109,23 @@
     "options": [
       {
         "value": "1",
-        "label": "Ask you to tell a story in front of everyone else"
+        "label": "Ask you to tell a story in front of everyone else",
+        "trait": "Introvert"
       },
       {
         "value": "2",
-        "label": "Talk privately between themselves"
+        "label": "Talk privately between themselves",
+        "trait": "Extrovert"
       },
       {
         "value": "3",
-        "label": "Hang around you all evening"
+        "label": "Hang around you all evening",
+        "trait": "Introvert"
       },
       {
         "value": "4",
-        "label": "Always drag the conversation back to themselves"
+        "label": "Always drag the conversation back to themselves",
+        "trait": "Extrovert"
       }
     ]
   }

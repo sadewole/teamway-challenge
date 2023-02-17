@@ -3,6 +3,7 @@ export type UsernameT = string
 export type QuestionOptionT = {
   label: string
   value: string
+  trait: string
 }
 
 export type QuestionT = {
