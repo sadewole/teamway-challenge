@@ -1,9 +1,7 @@
-import { PropsWithChildren, SyntheticEvent } from 'react'
+import { ComponentPropsWithoutRef, PropsWithChildren } from 'react'
 
-type Props = {
-  onClick: (se: SyntheticEvent) => void
+interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
   secondary?: boolean
-  disabled?: boolean
 }
 
 export const Button = ({
@@ -11,7 +9,8 @@ export const Button = ({
   disabled,
   onClick,
   secondary,
-}: PropsWithChildren<Props>) => {
+  ...rest
+}: PropsWithChildren<ButtonProps>) => {
   const buttonColor = secondary
     ? 'text-gray-900 enabled:hover:text-white border-2 border-gray-900'
     : 'text-white bg-gray-900'
@@ -20,6 +19,7 @@ export const Button = ({
       onClick={onClick}
       disabled={disabled}
       className={`${buttonColor} w-full py-2.5 px-5 enabled:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg disabled:opacity-75`}
+      {...rest}
     >
       {children}
     </button>

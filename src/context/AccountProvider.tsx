@@ -1,12 +1,6 @@
 import * as React from 'react'
 import { UsernameT } from './types'
 
-type DispatchAccountContextT = any
-
-export const DispatchAccountContext =
-  React.createContext<DispatchAccountContextT | null>(null)
-export const AccountContext = React.createContext<UsernameT | null>(null)
-
 type FetchAccountT = {
   action: 'fetchAccount'
 }
@@ -20,9 +14,17 @@ type LogoutAccountT = {
   action: 'logout'
 }
 
+type Actions = LoginAccountT | LogoutAccountT | FetchAccountT
+
+type DispatchAccountContextT = React.Dispatch<Actions>
+
+export const DispatchAccountContext =
+  React.createContext<DispatchAccountContextT>(() => {})
+export const AccountContext = React.createContext<UsernameT | null>(null)
+
 const reducer = (
   state: UsernameT | null,
-  update: LoginAccountT | LogoutAccountT | FetchAccountT,
+  update: Actions,
 ): UsernameT | null => {
   switch (update.action) {
     case 'login': {
@@ -46,7 +48,7 @@ const reducer = (
   }
 }
 
-const UIProvider = ({ children }: { children: React.ReactNode }): any => {
+const UIProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, dispatch] = React.useReducer(reducer, null)
 
   React.useEffect(() => {

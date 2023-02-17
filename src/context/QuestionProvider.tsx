@@ -28,17 +28,17 @@ type Actions =
   | RestartQuestionsT
   | SelectAnswerT
 
-type State = {
+export type State = {
   questions: QuestionT[] | null
   currentQuestionIndex: number
   currentQuestion: QuestionT | null
   selectedAnswers: AnswerT
 }
 
-type DispatchQuestionContextT = any
+type DispatchQuestionContextT = React.Dispatch<Actions>
 
 export const DispatchQuestionContext =
-  React.createContext<DispatchQuestionContextT | null>(null)
+  React.createContext<DispatchQuestionContextT>(() => {})
 export const QuestionContext = React.createContext<State>({} as State)
 
 const initialState = {
@@ -62,6 +62,7 @@ const reducer = (state: State, update: Actions): State => {
       }
     }
     case 'selectAnswer': {
+      console.log('secled')
       const selectedAnswers = {
         ...state.selectedAnswers,
         ...update.payload,
@@ -111,7 +112,7 @@ const reducer = (state: State, update: Actions): State => {
   }
 }
 
-const UIProvider = ({ children }: { children: React.ReactNode }): any => {
+const UIProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, dispatch] = React.useReducer(reducer, initialState)
 
   return (

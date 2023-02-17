@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page should match snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center justify-center -mt-24 h-screen"
+  >
+    <h1
+      class="text-3xl font-semibold mb-2"
+    >
+      Page not found
+    </h1>
+    <p>
+      Sorry, the URL you have used may be incorrect.
+    </p>
+    <p>
+      Check the spelling or
+       
+      <a
+        aria-current="page"
+        class="font-semibold text-blue-500 underline active"
+        href="/"
+      >
+        click here
+      </a>
+       
+      to navigate to the homepage.
+    </p>
+  </div>
+</div>
+`;

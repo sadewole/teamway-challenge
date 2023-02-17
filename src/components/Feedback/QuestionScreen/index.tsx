@@ -37,11 +37,13 @@ const QuestionScreen = ({ onFinish }: { onFinish(e: 'finish'): void }) => {
       <p className="text-sm text-gray-700 mb-2 italic">
         All questions are required
       </p>
-      <p className="text-sm text-gray-700">
+      <p className="text-sm text-gray-700" data-testid="questionNumbering">
         Question {currentQuestionIndex + 1}/{questions?.length}
       </p>
 
-      <p className="text-2xl my-4">{currentQuestion!.label}</p>
+      <p className="text-2xl my-4" data-testid="currentQuestionLabel">
+        {currentQuestion!.label}
+      </p>
       <ul className="space-y-2">
         {currentQuestion?.options.map((option, index) => (
           <OptionItem
@@ -62,11 +64,16 @@ const QuestionScreen = ({ onFinish }: { onFinish(e: 'finish'): void }) => {
           <Button
             secondary
             onClick={() => questionDispatch({ action: 'previousQuestion' })}
+            data-testid="previousButton"
           >
             Previous question
           </Button>
         )}
-        <Button onClick={handleNextQuestion} disabled={!selectedAnswer?.value}>
+        <Button
+          onClick={handleNextQuestion}
+          disabled={!Boolean(selectedAnswer?.value)}
+          data-testid="nextButton"
+        >
           {showResults ? 'Finish' : 'Next question'}
         </Button>
       </div>
